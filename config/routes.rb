@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  root :to => 'homes#top'
-  resources :lists, only: [:new, :index, :show, :edit, :create, :destroy, :update]
   get 'top' => 'homes#top'
+  resources :lists
 
   # get 'lists/new'
   # get 'lists/index'
